@@ -1,0 +1,29 @@
+{
+  "name": "hostelworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "firefoxTest": "npm run test -- --browser firefox",
+    "edgeTest": "npm run test -- --browser edge",
+    "regression": "npx cypress-tags run -e TAGS='@Regression' --headed --browser chrome"
+  },
+  "author": "damosull",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

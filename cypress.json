@@ -1,0 +1,14 @@
+{
+    "chromeWebSecurity":false,
+    "defaultCommandTimeout": 8000,
+    "pageLoadTimeout": 30000,
+    "reporter": "mochawesome",
+    "env": {
+      "url": "http://qainterview.pythonanywhere.com/"
+    },
+    "testFiles": "**/*.feature",
+    "retries": {      
+      "runMode": 1
+    }    
+  }
+  
